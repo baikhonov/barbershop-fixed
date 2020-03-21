@@ -29,7 +29,7 @@
       </ul>
       <ul>
         <li>
-          <button type="button">Войти</button>
+          <a href="login.html">Войти</a>
         </li>
       </ul>
     </nav>
@@ -124,9 +124,25 @@
   <section>
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
-    <!-- Здесь будет форма -->
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="user-login">Логин</label>
+        <input id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="remember">
+          Запомните меня
+        </label>
+        <a href="#">Я забьл пароль!</a>
+      </p>
+      <button type="submit">Войти</button>
+    </form>
     <button type="button">Закрыть</button>
   </section>
-  <section>
 </body>
 </html>
